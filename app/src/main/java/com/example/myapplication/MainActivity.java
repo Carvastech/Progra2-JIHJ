@@ -33,11 +33,38 @@ public class MainActivity extends AppCompatActivity {
                 double Respuesta = 0;
                 opt = findViewById(R.id.optOpciones);
                 int factorial = 1;
-                switch (opt.getCheckedRadioButtonId()){
 
-                    case 0:
-                        Respuesta = num1+num2;
+                if(opt.getCheckedRadioButtonId()==R.id.optSuma)
+                    Respuesta= num1+num2;
+                if(opt.getCheckedRadioButtonId()==R.id.optResta)
+                    Respuesta= num1-num2;
+                if(opt.getCheckedRadioButtonId()==R.id.optMult)
+                    Respuesta= num1*num2;
+                if(opt.getCheckedRadioButtonId()==R.id.optDiv)
+                    Respuesta= num1/num2;
+                if(opt.getCheckedRadioButtonId()==R.id.optPorcent)
+                    Respuesta = num1*(num2/100);
+                if(opt.getCheckedRadioButtonId()==R.id.optRaiz)
+                    Respuesta = Math.pow(num2, 1.0 / num1);
+                if(opt.getCheckedRadioButtonId()==R.id.optExponente)
+                    Respuesta = Math.pow(num1, num2);
+                if(opt.getCheckedRadioButtonId()==R.id.optFactorial)
+                    for (int i= 2;i<= num1;i++) {
+                        factorial *=i;
+                        Respuesta = factorial;
                         break;
+
+
+
+
+
+
+
+
+
+                /*switch (opt.getCheckedRadioButtonId()){
+
+
                     case 1:
                         Respuesta = num1-num2;
                         break;
@@ -66,9 +93,10 @@ public class MainActivity extends AppCompatActivity {
                             Respuesta = factorial;
 
                         }
-                        break;
+                        break
 
-                /*}
+
+
                 switch (spn.getSelectedItemPosition()){
                     case 0:
                         respuesta = num1+num2;
