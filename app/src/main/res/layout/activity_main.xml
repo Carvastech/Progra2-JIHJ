@@ -39,73 +39,58 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="80dp" />
 
+
+
+
     <RadioGroup
         android:id="@+id/optOpciones"
         android:layout_below="@+id/txtnum2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp" />
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
         <RadioButton
             android:id="@+id/optSuma"
             android:text="Suma"
             android:checked="true"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="150dp"
-            android:layout_marginLeft="20dp"/>
-    <RadioButton
-        android:id="@+id/optResta"
-        android:text="Resta"
-        android:checked="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="190dp"
-        android:layout_marginLeft="20dp"/>
-    <RadioButton
-        android:id="@+id/optMult"
-        android:text="Multiplicacion"
-        android:checked="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="230dp"
-        android:layout_marginLeft="20dp"/>
-    <RadioButton
-        android:id="@+id/optDiv"
-        android:text="Division"
-        android:checked="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="270dp"
-        android:layout_marginLeft="20dp"/>
-    <RadioButton
-        android:id="@+id/optExp"
-        android:text="Exponente"
-        android:checked="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="310dp"
-        android:layout_marginLeft="20dp"/>
-    <RadioButton
-        android:id="@+id/optFact"
-        android:text="Fctorial"
-        android:checked="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
-        android:layout_marginLeft="20dp"/>
-    <RadioButton
-        android:id="@+id/optPorcent"
-        android:text="Porcentaje"
-        android:checked="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="390dp"
-        android:layout_marginLeft="20dp"/>
-
-
-
-
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/optResta"
+            android:text="Resta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/optMult"
+            android:text="Multiplicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/optDiv"
+            android:text="Division"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/optPorcent"
+            android:text="Porcentaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/optRaiz"
+            android:text="Raiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/optExponente"
+            android:text="Exponete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/optFactorial"
+            android:text="Factorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
 
 
     <Button
@@ -113,17 +98,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtnum2"
-        android:layout_marginTop="300dp"
-        android:text="Calcular"/>
+        android:layout_marginTop="417dp"
+        android:text="Calcular " />
 
     <TextView
         android:id="@+id/lblRespuesta"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_below="@+id/btnCalcular"
-        android:layout_marginTop="40dp"
         android:layout_marginLeft="20dp"
-        android:text="Respuesta:  ?" />
+        android:layout_marginTop="14dp"
+        android:text="Respuesta: ?"  />
 
 
-</RelativeLayout>
+
+
+
+
+
+
+]]></RelativeLayout>

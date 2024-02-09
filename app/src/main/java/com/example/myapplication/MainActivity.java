@@ -30,31 +30,45 @@ public class MainActivity extends AppCompatActivity {
                 tempVal = findViewById(R.id.txtnum2);
                 double num2 = Double.parseDouble(tempVal.getText().toString());
 
-                double respuesta = 0;
+                double Respuesta = 0;
                 opt = findViewById(R.id.optOpciones);
+                int factorial = 1;
                 switch (opt.getCheckedRadioButtonId()){
-                    case R.id.optSuma:
-                        respuesta = num1+num2;
+
+                    case 0:
+                        Respuesta = num1+num2;
                         break;
-                    case R.id.optResta:
-                        respuesta = num1-num2;
+                    case 1:
+                        Respuesta = num1-num2;
                         break;
-                    case R.id.optMult:
-                        respuesta = num1*num2;
+                    case 2:
+                        Respuesta = num1*num2;
                         break;
-                    case R.id.optDiv:
-                        respuesta = num1/num2;
+                    case 3:
+                        Respuesta = num1/num2;
                         break;
-                    case R.id.optExp:
-                        respuesta = Math.pow(num1, num2);
+                    case 4:
+                        Respuesta = num1*(num2/100);
+
                         break;
-                    case R.id.optFact:
-                        respuesta = num1/num2;
+                    case 5:
+                        Respuesta = Math.pow(num1, 1.0 / num2);
+
                         break;
-                    case R.id.optPorcent:
-                        respuesta = num1*(num2/100);
+                    case 6:
+                        Respuesta = Math.pow(num1, num2);
+
                         break;
-                }
+
+                    case 7:
+                        for (int i= 2;i<= num1;i++) {
+                            factorial *=i;
+                            Respuesta = factorial;
+
+                        }
+                        break;
+
+                /*}
                 switch (spn.getSelectedItemPosition()){
                     case 0:
                         respuesta = num1+num2;
@@ -67,10 +81,10 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 3:
                         respuesta = num1/num2;
-                        break;
+                        break;*/
                 }
                 tempVal = findViewById(R.id.lblRespuesta);
-                tempVal.setText("Respuesta: "+ respuesta);
+                tempVal.setText("Respuesta: "+ Respuesta);
             }
         });
     }
