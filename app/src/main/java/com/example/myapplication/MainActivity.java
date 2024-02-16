@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                             factorial *=i;
                             Respuesta = factorial;
                             break;
-                            eso tilin
+
 
                 /*}
                 switch (spn.getSelectedItemPosition()){
